@@ -6,10 +6,6 @@ const firstNumber = 1;
 const secNumber = 0.5;
 const pi = Math.PI;
 
-const sentence = "Meu nome é ";
-const nome = "Diego";
-const hiragana = "\u3041";
-
 //funções
 function operation() {
   let mathOp = firstNumber + secNumber;
@@ -23,19 +19,34 @@ function minusculizador() {
   console.log("quantidade de caracteres =", tiposDeDadosMinusculo.length);
   return tiposDeDadosMinusculo;
 }
+const sentence = "Meu nome é ";
+const nome = "Diego";
+const hiragana = "\u3041";
 
 function concatenação() {
   let presentation = sentence + nome;
   return presentation;
 }
 
+function comparador() {
+  if (0 == false && 1 == true && " " == false && null != false && " " != null) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/*template String*/
 const tiposDeDados = [
-  /*template String*/ `Number = ${operationResult}`,
+  `Number = ${operation()}`,
   `String = "${concatenação()}"`,
   `Boolean = ${firstNumber == secNumber} or ${operationResult == 1.5}`,
 ];
 
-console.log(tiposDeDados, minusculizador());
+(function message() {
+  console.log(tiposDeDados, minusculizador(), comparador());
+})();
+
 //NodeJS
 
-operadores = ["||", "&&"];
+//operadores = ["||", "&&"];
