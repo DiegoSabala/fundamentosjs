@@ -43,8 +43,9 @@ const tiposDeDados = [
   `Boolean = ${firstNumber == secNumber} or ${operationResult == 1.5}`,
 ];
 
-(function message() {
-  console.log(tiposDeDados, minusculizador(), comparador());
+const funcList = [minusculizador(), comparador()](function message() {
+  console.table(tiposDeDados);
+  console.log(funcList);
 })();
 
 //NodeJS
