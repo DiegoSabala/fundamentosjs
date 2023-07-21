@@ -2,8 +2,10 @@ const idadeMinima = 18;
 const nome = "João";
 const anoNasc = 2005;
 
+console.log(`random number generator ${Math.trunc(Math.random() * 10)}`);
+
 const now = new Date();
-console.log(now.getFullYear() - anoNasc);
+console.log(`idade de João ${now.getFullYear() - anoNasc}`);
 
 const idadeCliente = (() => {
   return now.getFullYear() - anoNasc;
@@ -16,8 +18,6 @@ if (idadeCliente < idadeMinima) {
   console.log("Cerveja");
 }
 */
-
-console.log(Math.trunc(Math.random() * 10));
 
 let opTernario = idadeCliente >= idadeMinima ? "cerveja" : "suco";
 
