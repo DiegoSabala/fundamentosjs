@@ -27,7 +27,18 @@ const mediaForOf = () => {
   return somaDasNotas / notasForOf.length;
 };
 
+/* ------------ FOR EACH ---------------- */
+
+const notasForEach = [8, 9.5, 7.5, 6];
+
+const mediaForEach = () => {
+  let somaDasNotas = 0;
+  notasForEach.forEach((nota) => {
+    somaDasNotas += nota;
+  });
+  return somaDasNotas / notasForEach.length;
+};
+
 console.log(
-  `a media das notas é ${media()}`,
-  `a media das notas é ${mediaForOf()}`
+  `a media das notas é ${media()}, a media das notas é ${mediaForOf()}, a média das notas é ${mediaForEach()}`
 );
