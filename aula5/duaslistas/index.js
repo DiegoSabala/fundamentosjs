@@ -29,7 +29,6 @@ function juntaLista(list1, list2) {
     finalList.push(list2[positionList2]);
     positionList2++;
   }
-
   return finalList;
 }
 
