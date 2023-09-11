@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "name": "debugqlqrcoisa",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "node aula6/src/cli.js aula6/arquivos/texto.md"
+    }
+  ]
+}
